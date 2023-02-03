@@ -2,13 +2,15 @@
 Homework 1 
 Name: Brendan Sullivan
 Date: 2/2/2022
-Description of your program: 
+Description of your program: This program asks the user 4 questions on order to give them access to the secret message. 
+    The first 3 questions are math related, using random numbers and hard coded numbers. There are also a variety of 
+    different math symbols and operations. Then, the last question asks how many digits have appeared, and they should 
+    look veerrrry closely (hint). Then, if they get that right, the secret message is displayed
 '''
 
 from random import randint
 
 
-print("HELLO!!    WELCOME TO MY GAME. IN ORDER TO GET THE SECRET MESSAGE AT THE END, YOU MUST ANSWER A SERIES OF QUEST1ONS")
 
 complete = False
 answer1 = 0
@@ -23,6 +25,8 @@ while (complete == False):
         
         ## MATH PROB 1
         if (i == 0) :
+            print("HELLO!!    WELCOME TO MY GAME. IN ORDER TO GET THE SECRET MESSAGE AT THE END, YOU MUST ANSWER A SERIES OF QUEST1ONS")
+
             print("\nFirst, lets start with some math:")
             num1 = randint(100,200)                ## generate 2 random numbers to subtract
             num2 = randint(50,100)
